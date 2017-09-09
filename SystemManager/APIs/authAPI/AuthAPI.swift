@@ -12,6 +12,14 @@ class AuthAPI {
     static let AUTH_TOKEN_KEY:String = "AuthenticationToken"
     static let AUTH_TOKEN_CHANGE_NOTIFICATION = "AUTH_TOKEN_CHANGED"
     
+    private weak var rootAPI: StudentCheckAPI?
+    
+    init (rootAPI:StudentCheckAPI) {
+        self.rootAPI = rootAPI
+    }
+    
+    lazy var authService: AuthService = AuthService(rootService: self.rootAPI!.rootNetworkAPI)
+    
     var authenticationToken: String = UserDefaults.standard.string(forKey: AUTH_TOKEN_KEY) ?? "" {
         didSet {
             UserDefaults.standard.set(authenticationToken, forKey: AuthAPI.AUTH_TOKEN_KEY)
@@ -23,5 +31,9 @@ class AuthAPI {
         get {
             return self.authenticationToken.count > 0
         }
+    }
+    
+    func authenticate(email: String, password: String) {
+        
     }
 }

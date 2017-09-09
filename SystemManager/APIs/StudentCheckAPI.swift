@@ -13,8 +13,9 @@ class StudentCheckAPI {
     private init () {
         
     }
+    lazy var rootNetworkAPI: StudentCheckNetwork = StudentCheckNetwork(api: self)
     
-    var auth: AuthAPI = AuthAPI()
-    var student: StudentAPI = StudentAPI()
+    lazy var auth: AuthAPI = AuthAPI(rootAPI: self)
+    lazy var student: StudentAPI = StudentAPI()
     
 }
