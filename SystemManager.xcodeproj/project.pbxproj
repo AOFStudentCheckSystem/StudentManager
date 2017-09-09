@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79388A6269391A36C5411373 /* Pods_SystemManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3F6E44A31EFFDF4D473BEB /* Pods_SystemManager.framework */; };
+		C016CA211F64137F00ADC985 /* StudentCheckAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */; };
+		C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */; };
+		C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA281F6415CD00ADC985 /* StudentAPI.swift */; };
+		C016CA2C1F64167F00ADC985 /* StudentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */; };
+		C016CA2E1F6419FD00ADC985 /* StudentCheckNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */; };
+		C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA301F641E7300ADC985 /* AuthAPI.swift */; };
+		C016CA331F641E8C00ADC985 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA321F641E8C00ADC985 /* AuthService.swift */; };
 		C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */; };
 		C0EB158E1F63FE3200B2D6DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158D1F63FE3200B2D6DB /* ViewController.swift */; };
 		C0EB15911F63FE3200B2D6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB158F1F63FE3200B2D6DB /* Main.storyboard */; };
 		C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15921F63FE3200B2D6DB /* SystemManager.xcdatamodeld */; };
 		C0EB15961F63FE3200B2D6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EB15951F63FE3200B2D6DB /* Assets.xcassets */; };
 		C0EB15991F63FE3200B2D6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB15971F63FE3200B2D6DB /* LaunchScreen.storyboard */; };
+		C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */; };
+		C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A604E9D9959AE0158BC53B /* Pods-SystemManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager.release.xcconfig"; sourceTree = "<group>"; };
+		33C111BB2E0883C0325ED2A3 /* Pods-SystemManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager.debug.xcconfig"; sourceTree = "<group>"; };
+		6A3F6E44A31EFFDF4D473BEB /* Pods_SystemManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SystemManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckAPI.swift; sourceTree = "<group>"; };
+		C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C016CA281F6415CD00ADC985 /* StudentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAPI.swift; sourceTree = "<group>"; };
+		C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNetworkService.swift; sourceTree = "<group>"; };
+		C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckNetwork.swift; sourceTree = "<group>"; };
+		C016CA301F641E7300ADC985 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		C016CA321F641E8C00ADC985 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C0EB15881F63FE3200B2D6DB /* SystemManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0EB158D1F63FE3200B2D6DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +44,8 @@
 		C0EB15951F63FE3200B2D6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0EB15981F63FE3200B2D6DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0EB159A1F63FE3200B2D6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79388A6269391A36C5411373 /* Pods_SystemManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A7D971F2043F3AE7144F80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33C111BB2E0883C0325ED2A3 /* Pods-SystemManager.debug.xcconfig */,
+				09A604E9D9959AE0158BC53B /* Pods-SystemManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A6D7ED13C0F4C473BD4D2B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F6E44A31EFFDF4D473BEB /* Pods_SystemManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C016CA221F6414B400ADC985 /* studentAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C016CA281F6415CD00ADC985 /* StudentAPI.swift */,
+				C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */,
+			);
+			path = studentAPI;
+			sourceTree = "<group>";
+		};
+		C016CA231F64157E00ADC985 /* CoreData Models */ = {
+			isa = PBXGroup;
+			children = (
+				C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */,
+			);
+			path = "CoreData Models";
+			sourceTree = "<group>";
+		};
+		C016CA2F1F641D3E00ADC985 /* authAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C016CA301F641E7300ADC985 /* AuthAPI.swift */,
+				C016CA321F641E8C00ADC985 /* AuthService.swift */,
+			);
+			path = authAPI;
+			sourceTree = "<group>";
+		};
 		C0EB157F1F63FE3200B2D6DB = {
 			isa = PBXGroup;
 			children = (
 				C0EB158A1F63FE3200B2D6DB /* SystemManager */,
 				C0EB15891F63FE3200B2D6DB /* Products */,
+				14A7D971F2043F3AE7144F80 /* Pods */,
+				4A6D7ED13C0F4C473BD4D2B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +124,9 @@
 		C0EB158A1F63FE3200B2D6DB /* SystemManager */ = {
 			isa = PBXGroup;
 			children = (
+				C0EB15A21F6404FF00B2D6DB /* APIs */,
+				C0EB15A11F6404F700B2D6DB /* Models */,
+				C0EB15A01F6404F000B2D6DB /* UI */,
 				C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */,
 				C0EB158D1F63FE3200B2D6DB /* ViewController.swift */,
 				C0EB158F1F63FE3200B2D6DB /* Main.storyboard */,
@@ -67,6 +138,58 @@
 			path = SystemManager;
 			sourceTree = "<group>";
 		};
+		C0EB15A01F6404F000B2D6DB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB15A41F64059400B2D6DB /* Student */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C0EB15A11F6404F700B2D6DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C016CA231F64157E00ADC985 /* CoreData Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0EB15A21F6404FF00B2D6DB /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				C016CA2F1F641D3E00ADC985 /* authAPI */,
+				C016CA221F6414B400ADC985 /* studentAPI */,
+				C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */,
+				C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		C0EB15A41F64059400B2D6DB /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB15A51F6405A200B2D6DB /* Student List */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		C0EB15A51F6405A200B2D6DB /* Student List */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB15A81F6405B600B2D6DB /* Student List Table View */,
+				C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */,
+			);
+			path = "Student List";
+			sourceTree = "<group>";
+		};
+		C0EB15A81F6405B600B2D6DB /* Student List Table View */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */,
+			);
+			path = "Student List Table View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0EB159D1F63FE3200B2D6DB /* Build configuration list for PBXNativeTarget "SystemManager" */;
 			buildPhases = (
+				C63F9F32A8CE2F498A61EAD2 /* [CP] Check Pods Manifest.lock */,
 				C0EB15841F63FE3200B2D6DB /* Sources */,
 				C0EB15851F63FE3200B2D6DB /* Frameworks */,
 				C0EB15861F63FE3200B2D6DB /* Resources */,
+				1F2BF6C71FDEB8C1802B12BE /* [CP] Embed Pods Frameworks */,
+				04A3EFE2360761695C5A093A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +260,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A3EFE2360761695C5A093A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F2BF6C71FDEB8C1802B12BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C63F9F32A8CE2F498A61EAD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0EB15841F63FE3200B2D6DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */,
+				C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */,
+				C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */,
+				C016CA331F641E8C00ADC985 /* AuthService.swift in Sources */,
 				C0EB158E1F63FE3200B2D6DB /* ViewController.swift in Sources */,
+				C016CA2E1F6419FD00ADC985 /* StudentCheckNetwork.swift in Sources */,
+				C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */,
+				C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */,
+				C016CA211F64137F00ADC985 /* StudentCheckAPI.swift in Sources */,
 				C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */,
+				C016CA2C1F64167F00ADC985 /* StudentNetworkService.swift in Sources */,
 				C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +459,7 @@
 		};
 		C0EB159E1F63FE3200B2D6DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C111BB2E0883C0325ED2A3 /* Pods-SystemManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +475,7 @@
 		};
 		C0EB159F1F63FE3200B2D6DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A604E9D9959AE0158BC53B /* Pods-SystemManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
