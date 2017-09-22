@@ -3,8 +3,8 @@ inhibit_all_warnings!
 use_frameworks!
 target 'SystemManager' do
   use_frameworks!
-
-  pod 'Siesta', '~> 1.0'
+  
+  pod 'Alamofire', '~> 4.5'
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|

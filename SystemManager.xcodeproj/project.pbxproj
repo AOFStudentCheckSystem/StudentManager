@@ -11,19 +11,29 @@
 		C016CA211F64137F00ADC985 /* StudentCheckAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */; };
 		C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */; };
 		C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA281F6415CD00ADC985 /* StudentAPI.swift */; };
-		C016CA2C1F64167F00ADC985 /* StudentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */; };
-		C016CA2E1F6419FD00ADC985 /* StudentCheckNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */; };
 		C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA301F641E7300ADC985 /* AuthAPI.swift */; };
-		C016CA331F641E8C00ADC985 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA321F641E8C00ADC985 /* AuthService.swift */; };
 		C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */; };
-		C0EB158E1F63FE3200B2D6DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158D1F63FE3200B2D6DB /* ViewController.swift */; };
 		C0EB15911F63FE3200B2D6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB158F1F63FE3200B2D6DB /* Main.storyboard */; };
 		C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15921F63FE3200B2D6DB /* SystemManager.xcdatamodeld */; };
 		C0EB15961F63FE3200B2D6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EB15951F63FE3200B2D6DB /* Assets.xcassets */; };
 		C0EB15991F63FE3200B2D6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB15971F63FE3200B2D6DB /* LaunchScreen.storyboard */; };
 		C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */; };
 		C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */; };
+		C0EF5C5E1F7546AC0063B879 /* CoreStudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF5C5D1F7546AC0063B879 /* CoreStudentCheck.swift */; };
+		C0EF5C611F75482B0063B879 /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF5C601F75482B0063B879 /* StudentManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C06722AB1F643EAF0062822F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09A604E9D9959AE0158BC53B /* Pods-SystemManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -32,13 +42,9 @@
 		C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckAPI.swift; sourceTree = "<group>"; };
 		C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C016CA281F6415CD00ADC985 /* StudentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAPI.swift; sourceTree = "<group>"; };
-		C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNetworkService.swift; sourceTree = "<group>"; };
-		C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckNetwork.swift; sourceTree = "<group>"; };
 		C016CA301F641E7300ADC985 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
-		C016CA321F641E8C00ADC985 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C0EB15881F63FE3200B2D6DB /* SystemManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0EB158D1F63FE3200B2D6DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0EB15901F63FE3200B2D6DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0EB15931F63FE3200B2D6DB /* SystemManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SystemManager.xcdatamodel; sourceTree = "<group>"; };
 		C0EB15951F63FE3200B2D6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +52,8 @@
 		C0EB159A1F63FE3200B2D6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		C0EF5C5D1F7546AC0063B879 /* CoreStudentCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStudentCheck.swift; sourceTree = "<group>"; };
+		C0EF5C601F75482B0063B879 /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				C016CA281F6415CD00ADC985 /* StudentAPI.swift */,
-				C016CA2B1F64167F00ADC985 /* StudentNetworkService.swift */,
 			);
 			path = studentAPI;
 			sourceTree = "<group>";
@@ -98,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				C016CA301F641E7300ADC985 /* AuthAPI.swift */,
-				C016CA321F641E8C00ADC985 /* AuthService.swift */,
 			);
 			path = authAPI;
 			sourceTree = "<group>";
@@ -124,11 +130,10 @@
 		C0EB158A1F63FE3200B2D6DB /* SystemManager */ = {
 			isa = PBXGroup;
 			children = (
-				C0EB15A21F6404FF00B2D6DB /* APIs */,
 				C0EB15A11F6404F700B2D6DB /* Models */,
+				C0EB15A21F6404FF00B2D6DB /* APIs */,
 				C0EB15A01F6404F000B2D6DB /* UI */,
 				C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */,
-				C0EB158D1F63FE3200B2D6DB /* ViewController.swift */,
 				C0EB158F1F63FE3200B2D6DB /* Main.storyboard */,
 				C0EB15951F63FE3200B2D6DB /* Assets.xcassets */,
 				C0EB15971F63FE3200B2D6DB /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 		C0EB15A11F6404F700B2D6DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C0EF5C5C1F7545120063B879 /* Student Check Models */,
 				C016CA231F64157E00ADC985 /* CoreData Models */,
 			);
 			path = Models;
@@ -160,7 +166,6 @@
 				C016CA2F1F641D3E00ADC985 /* authAPI */,
 				C016CA221F6414B400ADC985 /* studentAPI */,
 				C016CA201F64137F00ADC985 /* StudentCheckAPI.swift */,
-				C016CA2D1F6419FD00ADC985 /* StudentCheckNetwork.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -190,6 +195,23 @@
 			path = "Student List Table View";
 			sourceTree = "<group>";
 		};
+		C0EF5C5C1F7545120063B879 /* Student Check Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF5C5F1F7548020063B879 /* Student */,
+				C0EF5C5D1F7546AC0063B879 /* CoreStudentCheck.swift */,
+			);
+			path = "Student Check Models";
+			sourceTree = "<group>";
+		};
+		C0EF5C5F1F7548020063B879 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF5C601F75482B0063B879 /* StudentManager.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +225,7 @@
 				C0EB15861F63FE3200B2D6DB /* Resources */,
 				1F2BF6C71FDEB8C1802B12BE /* [CP] Embed Pods Frameworks */,
 				04A3EFE2360761695C5A093A /* [CP] Copy Pods Resources */,
+				C06722AB1F643EAF0062822F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -282,9 +305,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,13 +323,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SystemManager-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -314,16 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */,
+				C0EF5C5E1F7546AC0063B879 /* CoreStudentCheck.swift in Sources */,
 				C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */,
 				C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */,
-				C016CA331F641E8C00ADC985 /* AuthService.swift in Sources */,
-				C0EB158E1F63FE3200B2D6DB /* ViewController.swift in Sources */,
-				C016CA2E1F6419FD00ADC985 /* StudentCheckNetwork.swift in Sources */,
 				C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */,
+				C0EF5C611F75482B0063B879 /* StudentManager.swift in Sources */,
 				C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */,
 				C016CA211F64137F00ADC985 /* StudentCheckAPI.swift in Sources */,
 				C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */,
-				C016CA2C1F64167F00ADC985 /* StudentNetworkService.swift in Sources */,
 				C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

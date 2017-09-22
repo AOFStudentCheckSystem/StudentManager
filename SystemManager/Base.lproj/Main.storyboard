@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ej6-Pu-xAy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Elk-W7-wmC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEg-kN-Efk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="466"/>
+            <point key="canvasLocation" x="894" y="466"/>
         </scene>
         <!--Student List-->
         <scene sceneID="fsY-kh-Ibj">
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="syP-a9-0Ii">
-                                <rect key="frame" x="0.0" y="64" width="375" height="525"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="studentCell" rowHeight="50" id="pxl-ws-fi3" customClass="StudentTableViewCell" customModule="SystemManager" customModuleProvider="target">
@@ -77,25 +77,25 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Students" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-Oq-UeM">
-                                <rect key="frame" x="16" y="626" width="111" height="21"/>
+                                <rect key="frame" x="16" y="577" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Missing Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwJ-Gi-fDp">
-                                <rect key="frame" x="16" y="597" width="115" height="21"/>
+                                <rect key="frame" x="16" y="548" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13e-ze-9vc">
-                                <rect key="frame" x="139" y="597" width="220" height="21"/>
+                                <rect key="frame" x="139" y="548" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-Pd-xcZ">
-                                <rect key="frame" x="135" y="626" width="224" height="21"/>
+                                <rect key="frame" x="135" y="577" width="224" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBE-3J-xru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2616.8000000000002" y="-198.35082458770617"/>
+            <point key="canvasLocation" x="1754" y="-198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iCV-qD-10n">
@@ -140,12 +140,47 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3D-gO-YcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="-198"/>
+            <point key="canvasLocation" x="894" y="-198"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Item 2-->
+        <scene sceneID="2r4-TF-pHG">
+            <objects>
+                <viewController id="tXx-yP-CZH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbt-YA-Nzr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="0zs-qn-n4x"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="RqS-40-mgQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="db1-ZQ-hEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-481" y="1205"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4do-Qy-HP0">
+            <objects>
+                <tabBarController id="Elk-W7-wmC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TpT-9G-D1u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ej6-Pu-xAy" kind="relationship" relationship="viewControllers" id="YmX-a4-VBS"/>
+                        <segue destination="tXx-yP-CZH" kind="relationship" relationship="viewControllers" id="6kN-94-KXg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptn-rK-xhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="156"/>
+        </scene>
+        <!--Students-->
         <scene sceneID="lcL-aT-LS6">
             <objects>
                 <splitViewController id="ej6-Pu-xAy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Students" image="user-icon" landscapeImage="user-icon" id="oBz-rL-Zns"/>
                     <connections>
                         <segue destination="i5T-t7-Cfr" kind="relationship" relationship="masterViewController" id="Lvw-8u-ivp"/>
                         <segue destination="BAU-py-ZMV" kind="relationship" relationship="detailViewController" id="PrE-HV-GDO"/>
@@ -153,7 +188,10 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fY-Ca-t7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="134"/>
+            <point key="canvasLocation" x="90" y="-198"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user-icon" width="30" height="30"/>
+    </resources>
 </document>

@@ -7,15 +7,31 @@
 //
 
 import Foundation
+import Alamofire
+
 class StudentCheckAPI {
     static let shared = StudentCheckAPI()
+    
+    let baseUrl: String = "https://api.aofactivities.com/"
+    
+    // konstancs
+    static let kAuthenticationRequired = "AUTHENTICATION_REQUIRED_NOTIFICATION"
+    static let kNetworkRequestFailed = "NETWORK_REQUEST_FAILED_NOTIFICATION"
     
     private init () {
         
     }
-    lazy var rootNetworkAPI: StudentCheckNetwork = StudentCheckNetwork(api: self)
+    
+    func getStandardAuthorizationHeaders() -> HTTPHeaders? {
+        if auth.isAuthenticated {
+            return ["Authorization": auth.authenticationToken]
+        } else {
+            NotificationCenter.default.post(name: Notification.Name(StudentCheckAPI.kAuthenticationRequired), object: nil)
+        }
+        return nil
+    }
     
     lazy var auth: AuthAPI = AuthAPI(rootAPI: self)
-    lazy var student: StudentAPI = StudentAPI()
+    lazy var student: StudentAPI = StudentAPI(rootAPI: self)
     
 }

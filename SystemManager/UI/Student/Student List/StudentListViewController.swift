@@ -12,7 +12,14 @@ class StudentListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        StudentCheckAPI.shared.auth.authenticate(email: "codetector@codetector.cn", password: "J3pa2eqr") { result in
+//            print("Done!")
+//        }
+//
+        StudentCheckAPI.shared.student.fetchAllStudents { (students) in
+        
+        }
+        
         // Do any additional setup after loading the view.
     }
 

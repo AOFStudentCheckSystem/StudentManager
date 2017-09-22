@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Alamofire
 
 class AuthAPI {
-    static let AUTH_TOKEN_KEY:String = "AuthenticationToken"
+    private static let AUTH_TOKEN_KEY:String = "AuthenticationToken"
     static let AUTH_TOKEN_CHANGE_NOTIFICATION = "AUTH_TOKEN_CHANGED"
     
     private weak var rootAPI: StudentCheckAPI?
@@ -18,10 +19,9 @@ class AuthAPI {
         self.rootAPI = rootAPI
     }
     
-    lazy var authService: AuthService = AuthService(rootService: self.rootAPI!.rootNetworkAPI)
-    
     var authenticationToken: String = UserDefaults.standard.string(forKey: AUTH_TOKEN_KEY) ?? "" {
         didSet {
+            print("New Token: \(self.authenticationToken)")
             UserDefaults.standard.set(authenticationToken, forKey: AuthAPI.AUTH_TOKEN_KEY)
             NotificationCenter.default.post(name: Notification.Name.init(AuthAPI.AUTH_TOKEN_CHANGE_NOTIFICATION), object: nil)
         }
@@ -33,7 +33,17 @@ class AuthAPI {
         }
     }
     
-    func authenticate(email: String, password: String) {
-        
+    func authenticate(email: String, password: String, completionHandler: ((_ result: Bool) -> Void)? = nil) {
+        Alamofire.request((rootAPI!.baseUrl + "auth/auth"), method: .post, parameters: ["email":email, "password": password]).responseJSON { (response) in
+            if response.result.isSuccess {
+                if (response.value! is Dictionary<String, Any>) {
+                    let token = (((response.value!) as! Dictionary<String, Any>)["token"] ?? "") as? String
+                    self.authenticationToken = token ?? ""
+                }
+            }
+            if completionHandler != nil {
+                completionHandler!(response.result.isSuccess)
+            }
+        }
     }
 }

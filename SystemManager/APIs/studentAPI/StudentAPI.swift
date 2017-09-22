@@ -7,6 +7,26 @@
 //
 
 import Foundation
+import Alamofire
+
 class StudentAPI {
     
+    private weak var rootAPI: StudentCheckAPI?
+    
+    init(rootAPI: StudentCheckAPI) {
+        self.rootAPI = rootAPI
+    }
+    
+    func fetchAllStudents(completionHandler: @escaping (Array<Dictionary<String, Any>>?) -> Void) {
+
+        Alamofire.request((rootAPI!.baseUrl + "student/listall"), method: .get, headers: rootAPI!.getStandardAuthorizationHeaders()).responseJSON { (response) in
+            if response.result.isSuccess {
+                let result = response.value as! Array<Dictionary<String, Any>>
+                completionHandler(result)
+            } else {
+                // Here is a failure handler
+                completionHandler(nil)
+            }
+        }
+    }
 }
