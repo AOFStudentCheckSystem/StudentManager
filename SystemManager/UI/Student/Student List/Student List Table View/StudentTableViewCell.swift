@@ -9,7 +9,20 @@
 import UIKit
 
 class StudentTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var firstName: UILabel!
+    @IBOutlet weak var nickName: UILabel!
+    var student: Student? {
+        didSet {
+            if student != nil {
+                self.lastName.text = student?.lastName
+                self.firstName.text = student?.firstName
+                self.nickName.text = student?.preferredName
+            }
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
