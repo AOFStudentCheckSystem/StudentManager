@@ -9,4 +9,10 @@
 import Foundation
 class StudentManager {
     
+    func refresh(callback: (() -> Void)? = nil) {
+        StudentCheckAPI.shared.student.fetchAllStudents { (data) in
+            
+        }
+    }
+    
 }
