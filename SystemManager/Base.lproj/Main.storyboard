@@ -179,7 +179,7 @@
         <!--Students-->
         <scene sceneID="lcL-aT-LS6">
             <objects>
-                <splitViewController id="ej6-Pu-xAy" sceneMemberID="viewController">
+                <splitViewController id="ej6-Pu-xAy" customClass="StudentSplitViewController" customModule="SystemManager" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Students" image="user-icon" landscapeImage="user-icon" id="oBz-rL-Zns"/>
                     <connections>
                         <segue destination="i5T-t7-Cfr" kind="relationship" relationship="masterViewController" id="Lvw-8u-ivp"/>

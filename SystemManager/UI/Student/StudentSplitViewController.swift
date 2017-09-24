@@ -8,11 +8,12 @@
 
 import UIKit
 
-class StudentSplitViewController: UISplitViewController {
+class StudentSplitViewController: UISplitViewController, UISplitViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +23,9 @@ class StudentSplitViewController: UISplitViewController {
     }
     
     
-    
+ func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        return true
+    }
     /*
     // MARK: - Navigation
 
