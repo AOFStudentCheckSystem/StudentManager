@@ -90,7 +90,6 @@ class StudentManager {
             student.grade = dict["grade"] as! Int32
             student.studentType = dict["studentType"] as! Int16
         }
-        print(student)
     }
     
 }

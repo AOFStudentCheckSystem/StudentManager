@@ -29,7 +29,17 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         return frc
     }()
     
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(StudentListViewController.handleRefresh), for: UIControlEvents.valueChanged)
+        
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(forName: , object: nil, queue: nil) { (notification) in
+            
+        }
         super.viewDidLoad()
         self.studentListTable.dataSource = self
         self.studentListTable.delegate = self
@@ -45,6 +55,8 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         }
         self.studentListTable.reloadData()
         
+        self.studentListTable.addSubview(refreshControl)
+        
 //        StudentCheckAPI.shared.auth.authenticate(email: "codetector@codetector.cn", password: "J3pa2eqr") { result in
 //            print("Done!")
 //        }
@@ -52,6 +64,19 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         // Do any additional setup after loading the view.
     }
 
+    @objc func handleRefresh(refreshControl: UIRefreshControl) {
+        if refreshControl.isRefreshing {
+            do {
+                try self.fetchedResultController.performFetch()
+            } catch let error {
+                print("Error: \(error)")
+            }
+            self.studentListTable.reloadData()
+            print("refreshing")
+        }
+        refreshControl.endRefreshing()
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if tableView == self.studentListTable {
             return self.fetchedResultController.sections!.count

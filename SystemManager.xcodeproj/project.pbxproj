@@ -13,7 +13,7 @@
 		C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA281F6415CD00ADC985 /* StudentAPI.swift */; };
 		C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA301F641E7300ADC985 /* AuthAPI.swift */; };
 		C058F5811F77360900DA4AE8 /* StudentSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C058F5801F77360900DA4AE8 /* StudentSplitViewController.swift */; };
-		C058F5851F77519500DA4AE8 /* Saveable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C058F5831F77519500DA4AE8 /* Saveable+CoreDataClass.swift */; };
+		C0B951001F78149300D16DD1 /* Saveable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B950FF1F78149300D16DD1 /* Saveable+CoreDataClass.swift */; };
 		C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */; };
 		C0EB15911F63FE3200B2D6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB158F1F63FE3200B2D6DB /* Main.storyboard */; };
 		C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15921F63FE3200B2D6DB /* SystemManager.xcdatamodeld */; };
@@ -46,7 +46,7 @@
 		C016CA281F6415CD00ADC985 /* StudentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAPI.swift; sourceTree = "<group>"; };
 		C016CA301F641E7300ADC985 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		C058F5801F77360900DA4AE8 /* StudentSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSplitViewController.swift; sourceTree = "<group>"; };
-		C058F5831F77519500DA4AE8 /* Saveable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Saveable+CoreDataClass.swift"; path = "/Users/Codetector/Projects/AOFCheck/SystemManager/SystemManager/Models/CoreData Models/Saveable+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		C0B950FF1F78149300D16DD1 /* Saveable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saveable+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0EB15881F63FE3200B2D6DB /* SystemManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0EB15901F63FE3200B2D6DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		C016CA231F64157E00ADC985 /* CoreData Models */ = {
 			isa = PBXGroup;
 			children = (
-				C058F5831F77519500DA4AE8 /* Saveable+CoreDataClass.swift */,
+				C0B950FF1F78149300D16DD1 /* Saveable+CoreDataClass.swift */,
 				C016CA241F64159A00ADC985 /* Student+CoreDataClass.swift */,
 			);
 			path = "CoreData Models";
@@ -350,9 +350,9 @@
 			files = (
 				C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */,
 				C0EF5C5E1F7546AC0063B879 /* CoreStudentCheck.swift in Sources */,
+				C0B951001F78149300D16DD1 /* Saveable+CoreDataClass.swift in Sources */,
 				C058F5811F77360900DA4AE8 /* StudentSplitViewController.swift in Sources */,
 				C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */,
-				C058F5851F77519500DA4AE8 /* Saveable+CoreDataClass.swift in Sources */,
 				C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */,
 				C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */,
 				C0EF5C611F75482B0063B879 /* StudentManager.swift in Sources */,
