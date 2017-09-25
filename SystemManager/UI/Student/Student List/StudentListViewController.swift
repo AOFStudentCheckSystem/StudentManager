@@ -23,9 +23,9 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         
         let frc = NSFetchedResultsController(fetchRequest: studentFetchRequest,
                                              managedObjectContext: viewContext,
-                                             sectionNameKeyPath: nil,
-                                             cacheName: "STUDENT_TABLE_LIST_FRC_CACHE")
-        frc.delegate = self
+                                             sectionNameKeyPath: "upperCaseLastNameInitial",
+                                             cacheName: nil)
+//        frc.delegate = self
         return frc
     }()
     
@@ -37,10 +37,11 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
     }()
     
     override func viewDidLoad() {
-        NotificationCenter.default.addObserver(forName: , object: nil, queue: nil) { (notification) in
-            
-        }
         super.viewDidLoad()
+
+        NotificationCenter.default.addObserver(forName: Notification.Name.NSManagedObjectContextDidSave, object: nil, queue: nil) { (notification) in
+            self.viewContext.mergeChanges(fromContextDidSave: notification)
+        }
         self.studentListTable.dataSource = self
         self.studentListTable.delegate = self
 
@@ -55,13 +56,13 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         }
         self.studentListTable.reloadData()
         
-        self.studentListTable.addSubview(refreshControl)
+      self.studentListTable.addSubview(refreshControl)
         
-//        StudentCheckAPI.shared.auth.authenticate(email: "codetector@codetector.cn", password: "J3pa2eqr") { result in
-//            print("Done!")
-//        }
+//      StudentCheckAPI.shared.auth.authenticate(email: "codetector@codetector.cn", password: "J3pa2eqr") { result in
+//          print("Done!")
+//      }
         
-        // Do any additional setup after loading the view.
+//      Do any additional setup after loading the view.
     }
 
     @objc func handleRefresh(refreshControl: UIRefreshControl) {
@@ -95,6 +96,14 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath) as! StudentTableViewCell
         cell.student = self.fetchedResultController.object(at: indexPath)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.fetchedResultController.sections?[section].name
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return self.fetchedResultController.sectionIndexTitles
     }
     
     override func didReceiveMemoryWarning() {
