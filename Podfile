@@ -5,6 +5,8 @@ target 'SystemManager' do
   use_frameworks!
   
   pod 'Alamofire', '~> 4.5'
+  pod 'StaticDataTableViewController', '~> 2.0.5'
+  pod 'Alertift', '~> 3.0'
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|

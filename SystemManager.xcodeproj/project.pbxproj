@@ -13,6 +13,8 @@
 		C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA281F6415CD00ADC985 /* StudentAPI.swift */; };
 		C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016CA301F641E7300ADC985 /* AuthAPI.swift */; };
 		C058F5811F77360900DA4AE8 /* StudentSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C058F5801F77360900DA4AE8 /* StudentSplitViewController.swift */; };
+		C05D87D21F9240550077A02F /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D87D11F9240550077A02F /* SettingsTVC.swift */; };
+		C05D87D51F92421B0077A02F /* UserStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D87D41F92421B0077A02F /* UserStatusCell.swift */; };
 		C0B951001F78149300D16DD1 /* Saveable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B950FF1F78149300D16DD1 /* Saveable+CoreDataClass.swift */; };
 		C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */; };
 		C0EB15911F63FE3200B2D6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB158F1F63FE3200B2D6DB /* Main.storyboard */; };
@@ -21,6 +23,7 @@
 		C0EB15991F63FE3200B2D6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB15971F63FE3200B2D6DB /* LaunchScreen.storyboard */; };
 		C0EB15A71F6405B000B2D6DB /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */; };
 		C0EB15AB1F6405D200B2D6DB /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */; };
+		C0EDE81D1F92AA8600AE6B69 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EDE81C1F92AA8600AE6B69 /* ButtonTableViewCell.swift */; };
 		C0EF5C5E1F7546AC0063B879 /* CoreStudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF5C5D1F7546AC0063B879 /* CoreStudentCheck.swift */; };
 		C0EF5C611F75482B0063B879 /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF5C601F75482B0063B879 /* StudentManager.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,8 @@
 		C016CA281F6415CD00ADC985 /* StudentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAPI.swift; sourceTree = "<group>"; };
 		C016CA301F641E7300ADC985 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		C058F5801F77360900DA4AE8 /* StudentSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSplitViewController.swift; sourceTree = "<group>"; };
+		C05D87D11F9240550077A02F /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
+		C05D87D41F92421B0077A02F /* UserStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusCell.swift; sourceTree = "<group>"; };
 		C0B950FF1F78149300D16DD1 /* Saveable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saveable+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0EB15881F63FE3200B2D6DB /* SystemManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB158B1F63FE3200B2D6DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		C0EB159A1F63FE3200B2D6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0EB15A61F6405B000B2D6DB /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		C0EB15AA1F6405D200B2D6DB /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		C0EDE81C1F92AA8600AE6B69 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		C0EF5C5D1F7546AC0063B879 /* CoreStudentCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStudentCheck.swift; sourceTree = "<group>"; };
 		C0EF5C601F75482B0063B879 /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +120,24 @@
 			path = authAPI;
 			sourceTree = "<group>";
 		};
+		C05D87D01F92403B0077A02F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C05D87D31F9242020077A02F /* FunctioningCells */,
+				C05D87D11F9240550077A02F /* SettingsTVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C05D87D31F9242020077A02F /* FunctioningCells */ = {
+			isa = PBXGroup;
+			children = (
+				C05D87D41F92421B0077A02F /* UserStatusCell.swift */,
+				C0EDE81C1F92AA8600AE6B69 /* ButtonTableViewCell.swift */,
+			);
+			path = FunctioningCells;
+			sourceTree = "<group>";
+		};
 		C0EB157F1F63FE3200B2D6DB = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +175,7 @@
 		C0EB15A01F6404F000B2D6DB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C05D87D01F92403B0077A02F /* Settings */,
 				C0EB15A41F64059400B2D6DB /* Student */,
 			);
 			path = UI;
@@ -313,10 +338,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SystemManager/Pods-SystemManager-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alertift/Alertift.framework",
+				"${BUILT_PRODUCTS_DIR}/StaticDataTableViewController/StaticDataTableViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alertift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StaticDataTableViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,9 +385,12 @@
 				C016CA311F641E7300ADC985 /* AuthAPI.swift in Sources */,
 				C016CA261F64159A00ADC985 /* Student+CoreDataClass.swift in Sources */,
 				C0EF5C611F75482B0063B879 /* StudentManager.swift in Sources */,
+				C05D87D21F9240550077A02F /* SettingsTVC.swift in Sources */,
 				C016CA291F6415CD00ADC985 /* StudentAPI.swift in Sources */,
 				C016CA211F64137F00ADC985 /* StudentCheckAPI.swift in Sources */,
 				C0EB15941F63FE3200B2D6DB /* SystemManager.xcdatamodeld in Sources */,
+				C0EDE81D1F92AA8600AE6B69 /* ButtonTableViewCell.swift in Sources */,
+				C05D87D51F92421B0077A02F /* UserStatusCell.swift in Sources */,
 				C0EB158C1F63FE3200B2D6DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

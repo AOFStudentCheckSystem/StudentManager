@@ -16,7 +16,6 @@ public class Student: Saveable {
         self.willAccessValue(forKey: "upperCaseLastNameInitial")
         let initial = String(self.lastName![..<self.lastName!.index(self.lastName!.startIndex, offsetBy: 1)]).uppercased()
         self.didAccessValue(forKey: "upperCaseLastNameInitial")
-        print(initial)
         return initial
     }
 }

@@ -91,5 +91,4 @@ class StudentManager {
             student.studentType = dict["studentType"] as! Int16
         }
     }
-    
 }

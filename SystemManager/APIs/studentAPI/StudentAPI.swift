@@ -21,7 +21,10 @@ class StudentAPI {
 
         Alamofire.request((rootAPI!.baseUrl + "student/listall"), method: .get, headers: rootAPI!.getStandardAuthorizationHeaders()).responseJSON { (response) in
             if response.result.isSuccess {
-                let result = response.value as! Array<Dictionary<String, Any>>
+                guard let result = response.value as? Array<Dictionary<String, Any>> else {
+                    completionHandler(nil)
+                    return
+                }
                 completionHandler(result)
             } else {
                 // Here is a failure handler
